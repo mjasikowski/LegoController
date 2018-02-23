@@ -329,7 +329,6 @@ namespace ConsoleApplication1
 
         static public async void ledColor(string color)
         {
-            LedPattern dupa;
             Enum.TryParse(color, true, out dupa); 
 
             await brick.DirectCommand.SetLedPatternAsync(dupa);
